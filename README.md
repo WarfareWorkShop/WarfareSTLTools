@@ -1,11 +1,10 @@
 # WarfareSTLTools ⚔️
 
-
 **Version:** 1.5  
 **Author:** David – Warfare Workshop  
 **Blender Version:** 3.0+
 
-A complete Blender addon to prepare wargaming miniatures for 3D printing. Includes scaling, base generation, and native STL export.
+A complete Blender add-on to prepare wargaming miniatures for 3D printing. Includes scaling, base generation, and native STL export.
 
 ---
 
@@ -31,12 +30,21 @@ A complete Blender addon to prepare wargaming miniatures for 3D printing. Includ
 
 ---
 
+## 📦 Repository Contents
+
+- `warfare_stl_tools/` – Blender add-on package with operators, panel, and utilities.
+- `tools/package_addon.py` – helper script to build the distributable ZIP archive.
+- `tests/` – lightweight pytest suite validating the pure Python helpers.
+
+---
+
 ## 🚀 Installation
 
-1. Download the `.zip` file  
-2. Go to **Edit > Preferences > Add-ons > Install**
-3. Select the `.zip` and enable the addon  
-4. Open the sidebar in the 3D View (press `N`), tab **Warfare Tools**
+1. Build the add-on archive locally with `python tools/package_addon.py` (creates `warfare_stl_tools.zip` in the project root).  
+   Alternatively, download the repository ZIP directly from GitHub and install it without unpacking.
+2. In Blender go to **Edit > Preferences > Add-ons > Install**.
+3. Select the generated `.zip` and enable the add-on.
+4. Open the sidebar in the 3D View (press `N`), tab **Warfare Tools**.
 
 ---
 
@@ -49,15 +57,23 @@ A complete Blender addon to prepare wargaming miniatures for 3D printing. Includ
 
 ---
 
+## 🧪 Running Tests
+
+This repository ships with a small automated test suite that covers the pure Python utilities.  
+Run the tests locally with:
+
+```bash
+pip install pytest
+pytest
+```
+
+---
+
 ## 📝 License
 
-This addon is released under the **GNU GPL v3**.  
+This add-on is released under the **GNU GPL v3**.  
 You may use, modify, and redistribute it freely.
 
 ---
 
 Created with ❤️ by [Warfare Workshop](https://warfareworkshop.com)
-
-
-
-
